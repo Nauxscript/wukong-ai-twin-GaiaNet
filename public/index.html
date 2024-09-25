@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wukong AI Digital Twin</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #535050;
+      margin: 0;
+      padding: 20px;
+      background-image: url("https://wallpapercave.com/wp/wp10299393.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .chat-container {
+      max-width: 500px;
+      margin: auto;
+      border: 1px solid #f8f4f4;
+      border-radius: 8px;
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .chat-box {
+      height: 400px;
+      overflow-y: auto;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+      margin-bottom: 1px;
+    }
+
+    .chat-message {
+      margin: 5px 0;
+    }
+
+    .user-message {
+      text-align: right;
+      color: #007bff;
+    }
+
+    .bot-message {
+      text-align: right;
+      color: #333;
+    }
+
+    input[type="text"] {
+      width: 80%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      padding: 10px;
+      width: 20%;
+      background-color: #ff9100;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #ff9100;
+    }
+
+
+    .userinput {
+      display: flex;
+    }
+
+    .mainhead {
+      align-items: center;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="mainhead">
+    <h1>Wukong AI Digital Twin</h1>
+    <p>Built using Gaianet API</p>
+  </div>
+  <div class="chat-container">
+    <h3>Output</h3>
+    <div class="chat-box" id="chat-box"></div>
+    <h3 class="inputBox">Input Box</h3>
+    <div class="userinput">
+      <input type="text" id="user-input" placeholder="Type your prompt here..." />
+      <button id="send-button">Send</button>
+    </div>
+    <br> <br>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
